@@ -1,3 +1,5 @@
+// https://github.com/aagahoz
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,7 +46,7 @@ int main()
 
 	return 0;
 }
-GPGGA gps_parser(char* rawData, int len)				/// Asama asama goruntulemek icin yorumlarý kaldiriniz
+GPGGA gps_parser(char* rawData, int len)				/// Asama asama goruntulemek icin yorumlarÃ½ kaldiriniz
 {														/// Remove comments for show process step by step
 	char key[7] = "$GPGGA";
 	GPGGA obje;
@@ -53,7 +55,7 @@ GPGGA gps_parser(char* rawData, int len)				/// Asama asama goruntulemek icin yo
 //	printf("-->>>>>>>>>>> 	key\n");
 //	printf("--- %s\n\n\n\n", key);
 	
-	// anahtarý bulma
+	// anahtarÃ½ bulma
 	char *p;
 	p = strstr(rawData, key);
 	
